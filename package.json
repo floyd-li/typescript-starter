@@ -1,0 +1,38 @@
+{
+  "name": "i-typescript-cli",
+  "version": "1.0.0",
+  "exports": "./index.js",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">= 16.16"
+  },
+  "scripts": {
+    "dev": "nodemon -e ts --exec ts-node --esm  src/index.ts",
+    "build": "yarn eslint && yarn prettier && rm -rf dist && tsc --build",
+    "eslint": "eslint --fix src --ext .ts",
+    "prettier": "prettier --write \"src/**/*.ts\"",
+    "commit": "sz",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@tsconfig/node16-strictest-esm": "^1.0.3",
+    "@types/node": "^18.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "^8.19.0",
+    "husky": "^8.0.1",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^4.7.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

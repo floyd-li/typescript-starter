@@ -13,7 +13,7 @@
 		"build": "yarn eslint && yarn prettier && rm -rf dist && tsc --build",
 		"eslint": "eslint --fix src --ext .ts",
 		"prettier": "prettier --write \"src/**/*.ts\"",
-		"commit": "sz",
+		"commit": "cz",
 		"prepare": "husky install"
 	},
 	"devDependencies": {

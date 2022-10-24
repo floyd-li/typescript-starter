@@ -4,7 +4,7 @@
 
 ### feature
 
-- [x] typesciript support
+- [x] typescript support
 - [x] eslint support
 - [x] prettier support
 - [x] esm support

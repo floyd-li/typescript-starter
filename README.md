@@ -10,4 +10,4 @@
 - [x] esm support
 - [x] commit-lint support
 - [x] husky support
-- [ ] path alias (WIP: not working fine with esm enabled)
+- [x] path alias

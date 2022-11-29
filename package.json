@@ -1,17 +1,15 @@
 {
   "name": "i-typescript-cli",
   "version": "1.0.0",
-  "exports": "./index.js",
   "license": "MIT",
   "author": "Floyd Li",
-  "type": "module",
   "engines": {
     "node": ">= 16.16"
   },
   "scripts": {
     "dev": "nodemon -e ts --exec ts-node --esm  src/index.ts",
     "test": "jest",
-    "build": "yarn eslint && yarn prettier && rm -rf dist && tsc --build",
+    "build": "yarn eslint && yarn prettier && tsc --build",
     "eslint": "eslint --fix src --ext .ts",
     "prettier": "prettier --write \"src/**/*.ts\"",
     "commit": "cz",

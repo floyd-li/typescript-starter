@@ -20,7 +20,7 @@
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@rollup/plugin-node-resolve": "^15.0.1",
-    "@rollup/plugin-terser": "^0.1.0",
+    "@rollup/plugin-terser": "^0.2.0",
     "@rollup/plugin-typescript": "^10.0.1",
     "@tsconfig/node16-strictest-esm": "^1.0.3",
     "@types/jest": "^29.2.4",

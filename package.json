@@ -8,10 +8,10 @@
     "node": ">= 16.16"
   },
   "scripts": {
-    "dev": "nodemon -e ts --exec ts-node --esm  src/index.ts",
+    "dev": "nodemon ./src/index.ts",
     "test": "jest",
-    "build:dev": "rimraf ./dist && rollup -c rollup.config.dev.js",
-    "build:prod": "rimraf ./dist && rollup -c rollup.config.prod.js",
+    "build:dev": "rimraf ./dist && cross-env NODE_ENV=development rollup -c rollup.config.js",
+    "build:prod": "rimraf ./dist && cross-env NODE_ENV=production rollup -c rollup.config.js",
     "eslint": "eslint --fix src --ext .ts",
     "prettier": "prettier --write \"src/**/*.ts\"",
     "commit": "cz",
@@ -28,6 +28,7 @@
     "@types/node": "^20.4.2",
     "@typescript-eslint/eslint-plugin": "^6.1.0",
     "@typescript-eslint/parser": "^6.1.0",
+    "cross-env": "^7.0.3",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.45.0",
     "husky": "^8.0.3",

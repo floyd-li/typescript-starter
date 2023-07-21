@@ -1,6 +1,7 @@
 import typescript from "@rollup/plugin-typescript";
 import terser from "@rollup/plugin-terser";
 import resolve from "@rollup/plugin-node-resolve";
+import commonjs from '@rollup/plugin-commonjs';
 
 export default {
   input: "src/index.ts",
@@ -13,5 +14,5 @@ export default {
       format: "esm",
     }
   ],
-  plugins: [resolve(), typescript(), terser()],
+  plugins: [commonjs(), resolve(), typescript(), terser()],
 }

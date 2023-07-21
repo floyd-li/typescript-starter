@@ -1,7 +1,7 @@
-const typescript = require("@rollup/plugin-typescript");
-const resolve = require("@rollup/plugin-node-resolve");
+import typescript from "@rollup/plugin-typescript";
+import resolve from "@rollup/plugin-node-resolve";
 
-module.exports = {
+export default {
   input: "src/index.ts",
   output: [{
       file:"./dist/common/index.js",

@@ -1,8 +1,8 @@
-const typescript = require("@rollup/plugin-typescript");
-const terser = require("@rollup/plugin-terser");
-const resolve = require("@rollup/plugin-node-resolve");
+import typescript from "@rollup/plugin-typescript";
+import terser from "@rollup/plugin-terser";
+import resolve from "@rollup/plugin-node-resolve";
 
-module.exports = {
+export default {
   input: "src/index.ts",
   output: [{
       file:"./dist/common/index.min.js",

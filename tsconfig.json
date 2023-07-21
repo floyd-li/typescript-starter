@@ -4,6 +4,7 @@
     "declaration": true /* Generate .d.ts files from TypeScript and JavaScript files in your project. */,
     "outDir": "dist" /* Specify an output folder for all emitted files. */,
     "module": "ESnext",
+    "moduleResolution": "node",
     "paths": {
       "@/*": ["src/*"]
     } /* Specify a set of entries that re-map imports to additional lookup locations. */,
@@ -14,9 +15,7 @@
   "ts-node": {
     "files": true,
     "transpileOnly": true,
-    "require": ["tsconfig-paths/register"],
-    "compilerOptions": {
-      "module": "CommonJS"
-    }
+    "esm": true,
+    "require": ["tsconfig-paths/register"]
   }
 }
